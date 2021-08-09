@@ -1,0 +1,56 @@
+<div class="maincon">
+
+    <div class="navi">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <button type="button" class="nav-link" (click)="newadd()">ADD A NEW RESIDENT</button>
+            </li> &nbsp; &nbsp; &nbsp;
+            <li class="nav-item">
+             <button class="nav-link">LOGOUT</button>
+            </li>
+           
+          </ul>
+    </div> <br> <br>
+
+    <div class="list">
+        <h1>LIST OF MEMBERS IN RESIDENCE</h1>
+    </div>
+
+    <br> <br>
+
+    <table class="table  table-hover" >
+        <thead>
+            <tr>
+                
+                <th scope="col">Name of Member</th>
+                <th scope="col">Flat No</th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody id="contents">
+           
+            <tr   *ngFor="for let elements of result" >
+                
+                  
+                
+                <td>{{elements[1]}}</td>
+                    <td>{{elements[0]}}
+                    </td>
+                    <td>
+                        <button type="button" [routerLink]="['/viewdata', elements[0]]" >Get Full Data</button>
+                    </td>
+               
+           
+            </tr>
+        
+
+
+        </tbody>
+    </table>
+
+    
+</div>
+
+
+

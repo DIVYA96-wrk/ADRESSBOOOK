@@ -1,0 +1,12 @@
+.maincon{
+    padding:50px
+}
+.navi{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+}

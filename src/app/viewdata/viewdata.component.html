@@ -1,0 +1,53 @@
+<div class="maincon">
+    <div class="list">
+        <h1>Complete Data of Member</h1>
+    </div>
+
+    <br> <br>
+
+    <table class="table  table-hover">
+        <thead>
+            <tr>
+
+                <th scope="col">House No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Mobile</th>
+                <th></th>
+                <th></th>
+                
+
+            </tr>
+        </thead>
+        <tbody id="contents" *ngFor=" let elements of results">
+
+
+            <tr *ngIf="id==elements[0]">
+
+
+
+                <td>{{elements[0]}}</td>
+                <td>{{elements[1]}} </td>
+                <td>{{elements[2]}}</td>
+                <td>{{elements[3]}}</td>
+                <td><button type="button" (click)="edit(elements[0],elements[1],elements[2],elements[3])">Edit</button></td>
+                <td><button type="button" (click)="delete(elements[0])">Delete</button></td>
+                <td></td>
+
+
+
+
+
+            </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+    
+
+
+</div>

@@ -1,0 +1,46 @@
+<section>
+    <div class="container">
+        <div class="form">
+            <h1>Insert new Member</h1>
+
+            <form>
+
+                <br>
+                <div class="mb-3 inputBox">
+
+                    <input type="text" class="form-control" id="example" name="code" placeholder="House number" [(ngModel)]="hn">
+
+                </div> <br>
+
+
+                <div class="mb-3 inputBox">
+
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="names1"
+                        placeholder="Name" [(ngModel)]="names">
+                </div> <br>
+                <div class="mb-3 inputBox">
+
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="adress1"
+                        placeholder="Adress" [(ngModel)]="adress">
+                </div> <br>
+                <div class="mb-3 inputBox">
+
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="mobile1"
+                        placeholder="Mobile number" [(ngModel)]="mobile">
+                </div> <br>
+
+                <br>
+                <div><button type="button" class="btn btn-primary onee " (click)="insert()">Insert</button></div>
+
+                <br>
+
+
+
+
+
+            </form>
+        </div>
+    </div>
+    
+</section>
+<!-- <button type="button" (click)="insert()"> Insert</button> -->

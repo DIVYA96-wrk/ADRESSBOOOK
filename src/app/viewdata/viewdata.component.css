@@ -1,0 +1,7 @@
+.list{
+    display: flex;
+    justify-content: center;
+}
+.maincon{
+    padding:50px
+}
